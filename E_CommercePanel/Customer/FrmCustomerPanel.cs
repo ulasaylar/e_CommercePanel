@@ -27,7 +27,7 @@ namespace E_CommercePanel
             this.Hide();
         }
 
-        private void btnEditCustomers_Click(object sender, EventArgs e)
+        private void BtnOrderHistory_Click(object sender, EventArgs e)
         {
             FrmOrderHistory fr = new FrmOrderHistory(_customerID);
             fr.Show();

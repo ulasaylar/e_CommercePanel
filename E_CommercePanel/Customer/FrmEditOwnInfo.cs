@@ -36,7 +36,7 @@ namespace E_CommercePanel.Customer
             cnc.connection().Close();
         }
 
-        private void btnAddCustomer_Click(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = new SqlCommand("EXEC sp_UpdateCustomer @id=@p1, @firstname=@p2, @lastname=@p3, @email =@p4, @phone =@p5", cnc.connection());
             cmd.Parameters.AddWithValue("@p1", _customerID);

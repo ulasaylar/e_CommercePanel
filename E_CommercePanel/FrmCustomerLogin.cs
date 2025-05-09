@@ -39,5 +39,19 @@ namespace E_CommercePanel
             }
             cnc.connection().Close();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FrmLogin fr = new FrmLogin();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void linkRgstr_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmRegisterCustomer fr = new FrmRegisterCustomer();
+            fr.Show();
+            this.Hide();
+        }
     }
 }

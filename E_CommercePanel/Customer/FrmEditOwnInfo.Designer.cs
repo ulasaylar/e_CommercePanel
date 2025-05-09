@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditOwnInfo));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnAddCustomer = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnAddCustomer);
+            this.groupBox1.Controls.Add(this.btnUpdate);
             this.groupBox1.Controls.Add(this.lblPhone);
             this.groupBox1.Controls.Add(this.lblEmail);
             this.groupBox1.Controls.Add(this.lblLastName);
@@ -69,16 +69,16 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // btnAddCustomer
+            // btnUpdate
             // 
-            this.btnAddCustomer.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAddCustomer.Location = new System.Drawing.Point(161, 342);
-            this.btnAddCustomer.Name = "btnAddCustomer";
-            this.btnAddCustomer.Size = new System.Drawing.Size(177, 50);
-            this.btnAddCustomer.TabIndex = 10;
-            this.btnAddCustomer.Text = "Update";
-            this.btnAddCustomer.UseVisualStyleBackColor = true;
-            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
+            this.btnUpdate.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUpdate.Location = new System.Drawing.Point(161, 342);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(177, 50);
+            this.btnUpdate.TabIndex = 10;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // lblPhone
             // 
@@ -231,7 +231,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnAddCustomer;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblLastName;
