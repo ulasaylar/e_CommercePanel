@@ -33,5 +33,24 @@ namespace E_CommercePanel
             fr.Show();
             this.Hide();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FrmCustomerLogin fr = new FrmCustomerLogin();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnDiscounts_Click(object sender, EventArgs e)
+        {
+            FrmDiscounts fr = new FrmDiscounts(_customerID);
+            fr.Show();
+            this.Hide();
+        }
     }
 }

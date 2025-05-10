@@ -11,24 +11,19 @@ using System.Windows.Forms;
 
 namespace E_CommercePanel.Customer
 {
-    public partial class FrmOrderHistory : Form
+    public partial class FrmDiscounts : Form
     {
         private int _customerID;
         sqlConnection cnc = new sqlConnection();
-        public FrmOrderHistory(int customerID)
+        public FrmDiscounts(int customerID)
         {
             InitializeComponent();
             _customerID = customerID;
         }
 
-        private void FrmOrderHistory_Load(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM dbo.fn_ListOrderHistoryByCustomerID(@p1)", cnc.connection());
-            da.SelectCommand.Parameters.AddWithValue("@p1", _customerID);
-            da.Fill(dt);
-            dataGridView1.DataSource = dt;
-            cnc.connection().Close();
+            Application.Exit();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -38,9 +33,12 @@ namespace E_CommercePanel.Customer
             this.Hide();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void FrmDiscounts_Load(object sender, EventArgs e)
         {
-            Application.Exit();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("SELECT ProductID,DiscountRate,StartDate,EndDate,Description FROM Tbl_Discounts WHERE IsActive = 1", cnc.connection());
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
     }
 }

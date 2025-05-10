@@ -1,6 +1,6 @@
 ﻿namespace E_CommercePanel.Customer
 {
-    partial class FrmOrderHistory
+    partial class FrmDiscounts
     {
         /// <summary>
         /// Required designer variable.
@@ -28,55 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOrderHistory));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDiscounts));
+            this.lblBanner = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
+            // lblBanner
+            // 
+            this.lblBanner.AutoSize = true;
+            this.lblBanner.Font = new System.Drawing.Font("Sitka Display", 32.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBanner.ForeColor = System.Drawing.SystemColors.Info;
+            this.lblBanner.Location = new System.Drawing.Point(231, 22);
+            this.lblBanner.Name = "lblBanner";
+            this.lblBanner.Size = new System.Drawing.Size(336, 62);
+            this.lblBanner.TabIndex = 10;
+            this.lblBanner.Text = "Current Discounts";
+            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(13, 111);
+            this.panel1.Controls.Add(this.btnBack);
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.lblBanner);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(775, 327);
-            this.panel1.TabIndex = 0;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(775, 327);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Sitka Display", 32.25F, System.Drawing.FontStyle.Italic);
-            this.label2.ForeColor = System.Drawing.SystemColors.Info;
-            this.label2.Location = new System.Drawing.Point(270, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(264, 62);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Order History";
+            this.panel1.Size = new System.Drawing.Size(800, 128);
+            this.panel1.TabIndex = 11;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel2.Location = new System.Drawing.Point(150, 90);
+            this.panel2.Location = new System.Drawing.Point(150, 99);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(500, 1);
-            this.panel2.TabIndex = 13;
+            this.panel2.TabIndex = 12;
             // 
             // btnExit
             // 
@@ -86,10 +81,10 @@
             this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(696, 12);
+            this.btnExit.Location = new System.Drawing.Point(692, 24);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(92, 90);
-            this.btnExit.TabIndex = 19;
+            this.btnExit.Size = new System.Drawing.Size(85, 80);
+            this.btnExit.TabIndex = 18;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -101,44 +96,63 @@
             this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(13, 12);
+            this.btnBack.Location = new System.Drawing.Point(33, 24);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(92, 90);
-            this.btnBack.TabIndex = 20;
+            this.btnBack.Size = new System.Drawing.Size(85, 80);
+            this.btnBack.TabIndex = 17;
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // FrmOrderHistory
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 128);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(800, 322);
+            this.panel3.TabIndex = 12;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(800, 322);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // FrmDiscounts
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmOrderHistory";
+            this.Name = "FrmDiscounts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmOrderHistory";
-            this.Load += new System.EventHandler(this.FrmOrderHistory_Load);
+            this.Text = "FrmDiscounts";
+            this.Load += new System.EventHandler(this.FrmDiscounts_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Label lblBanner;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

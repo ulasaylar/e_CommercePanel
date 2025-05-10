@@ -48,13 +48,12 @@ namespace E_CommercePanel.Customer
             MessageBox.Show("Your information has been updated successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             cnc.connection().Close();
         }
-
-        private void picClose_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void picBack_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             FrmCustomerPanel fr = new FrmCustomerPanel(_customerID);
             fr.Show();
