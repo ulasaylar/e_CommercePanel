@@ -27,16 +27,17 @@ namespace E_CommercePanel
             cnc.connection().Close();
         }
 
-        private void picBack_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             FrmAdminPanel fr = new FrmAdminPanel();
             fr.Show();
             this.Hide();
         }
 
-        private void picClose_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+
         }
     }
 }

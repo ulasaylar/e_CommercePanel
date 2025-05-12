@@ -44,7 +44,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnOrders);
-            this.groupBox1.Location = new System.Drawing.Point(13, 35);
+            this.groupBox1.Location = new System.Drawing.Point(21, 35);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(249, 403);
             this.groupBox1.TabIndex = 0;
@@ -52,7 +52,13 @@
             // 
             // btnOrders
             // 
-            this.btnOrders.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOrders.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOrders.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnOrders.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.btnOrders.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.btnOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrders.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
+            this.btnOrders.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnOrders.Location = new System.Drawing.Point(26, 26);
             this.btnOrders.Name = "btnOrders";
             this.btnOrders.Size = new System.Drawing.Size(205, 50);
@@ -65,7 +71,7 @@
             // 
             this.groupBox2.Controls.Add(this.btnEditCustomers);
             this.groupBox2.Controls.Add(this.btnCustomers);
-            this.groupBox2.Location = new System.Drawing.Point(268, 35);
+            this.groupBox2.Location = new System.Drawing.Point(276, 35);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(249, 403);
             this.groupBox2.TabIndex = 1;
@@ -73,7 +79,13 @@
             // 
             // btnEditCustomers
             // 
-            this.btnEditCustomers.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F);
+            this.btnEditCustomers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditCustomers.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnEditCustomers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.btnEditCustomers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.btnEditCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditCustomers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
+            this.btnEditCustomers.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnEditCustomers.Location = new System.Drawing.Point(24, 108);
             this.btnEditCustomers.Name = "btnEditCustomers";
             this.btnEditCustomers.Size = new System.Drawing.Size(205, 50);
@@ -84,7 +96,13 @@
             // 
             // btnCustomers
             // 
-            this.btnCustomers.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F);
+            this.btnCustomers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCustomers.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnCustomers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCustomers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
+            this.btnCustomers.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCustomers.Location = new System.Drawing.Point(24, 26);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Size = new System.Drawing.Size(205, 50);
@@ -95,7 +113,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Location = new System.Drawing.Point(523, 35);
+            this.groupBox3.Location = new System.Drawing.Point(531, 35);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(249, 403);
             this.groupBox3.TabIndex = 1;
@@ -105,7 +123,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(110, 5);
+            this.label1.ForeColor = System.Drawing.SystemColors.Info;
+            this.label1.Location = new System.Drawing.Point(117, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 35);
             this.label1.TabIndex = 2;
@@ -115,7 +134,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(336, 5);
+            this.label2.ForeColor = System.Drawing.SystemColors.Info;
+            this.label2.Location = new System.Drawing.Point(343, 5);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 35);
             this.label2.TabIndex = 3;
@@ -125,7 +145,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(622, 5);
+            this.label3.ForeColor = System.Drawing.SystemColors.Info;
+            this.label3.Location = new System.Drawing.Point(629, 5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 35);
             this.label3.TabIndex = 4;
@@ -135,8 +156,8 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(795, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

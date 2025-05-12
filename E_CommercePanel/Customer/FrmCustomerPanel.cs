@@ -52,5 +52,12 @@ namespace E_CommercePanel
             fr.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmProducts fr = new FrmProducts(_customerID);
+            fr.Show();
+            this.Hide();
+        }
     }
 }

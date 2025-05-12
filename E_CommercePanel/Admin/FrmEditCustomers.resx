@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="picBack.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnBack.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAA15JREFUeF7t3c2rDXEcx/Hr2S0s3GylLITQtWZBFup6+AdYygoLUlaypiQJSSgR
+        DAAACwwBP0AiyAAAA15JREFUeF7t3c2rDXEcx/Hr2S0s3GylLITQtWZBFup6+AdYygoLUlaypiQJSSgR
         ZeNpi7CQIpJYKUWW5FIs7lu/+p2aPp1zZs6ZmXu/6vNaXt/5qXk3M+eczpwZGTEzM7PKgDFgP3ADeAw8
         AM4A24BZOm8tSTsbOAL8oLeXwHrd1hoGzMtHRBWTwISuYQ0B5gA3da+X+APs1rWspnxk3NG9DUwBt4AD
         wHHggw7kKDt0TRtSnxg/ge0yOwpc0UHgFzBenLUh9DlNpR28ReeTfNE/pxsAb4HZOm8VlRwZm3W+KO14
@@ -138,10 +138,10 @@
         2oeB71qg4AWwTre1FgFLgX3A9fzx+n3gNLA1RdN5MzOz/8E/ULzc7oo7jSIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="picClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnExit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAACn5JREFUeF7tnXesPUUZhlFEsaESNf4hClhjQ0VUVJoIakATFQsiWGKJATFqDCii
+        DAAACwwBP0AiyAAACn5JREFUeF7tnXesPUUZhlFEsaESNf4hClhjQ0VUVJoIakATFQsiWGKJATFqDCii
         oGBDIGqiQZoiRgIaEojxD0PUYO+9Y6/BXgDrY15/38bhPbPnnN0zW865+yQnubn3nZ3ZvWdmvvnm+2a3
         225iYmJiYmJDAXYE7g88BTgReB/waeBrwFXA74G/x0c/63f626dCqzIqq2vs6NefWABwI2BP4DjgI8C1
         lOOfwBeANwKPAm7i9U9s+yfcMB7QBcBf/Cl2iOp6D3Cg2uDt2nIAd4pv68/8SQ2A2vAGtcnbufEAdwPO

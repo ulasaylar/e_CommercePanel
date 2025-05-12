@@ -64,6 +64,12 @@
     <Compile Include="Customer\FrmOrderHistory.Designer.cs">
       <DependentUpon>FrmOrderHistory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer\FrmProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\FrmProducts.Designer.cs">
+      <DependentUpon>FrmProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAdminLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer\FrmOrderHistory.resx">
       <DependentUpon>FrmOrderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\FrmProducts.resx">
+      <DependentUpon>FrmProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer\FrmRegisterCustomer.resx">
       <DependentUpon>FrmRegisterCustomer.cs</DependentUpon>

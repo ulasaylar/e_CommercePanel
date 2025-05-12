@@ -20,12 +20,11 @@ namespace E_CommercePanel
         sqlConnection cnc = new sqlConnection();
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            SqlCommand com = new SqlCommand("EXEC sp_NewCustomer @id=@p1,@firstname=@p2,@lastname=@p3,@email=@p4,@phone=@p5",cnc.connection());
-            com.Parameters.AddWithValue("@p1", txtId.Text);
-            com.Parameters.AddWithValue("@p2", txtFirstName.Text);
-            com.Parameters.AddWithValue("@p3", txtLastName.Text);
-            com.Parameters.AddWithValue("@p4", txtEmail.Text);
-            com.Parameters.AddWithValue("@p5", txtPhone.Text);
+            SqlCommand com = new SqlCommand("EXEC sp_NewCustomer @firstname=@p1,@lastname=@p2,@email=@p3,@phone=@p4",cnc.connection());
+            com.Parameters.AddWithValue("@p1", txtFirstName.Text);
+            com.Parameters.AddWithValue("@p2", txtLastName.Text);
+            com.Parameters.AddWithValue("@p3", txtEmail.Text);
+            com.Parameters.AddWithValue("@p4", txtPhone.Text);
             com.ExecuteNonQuery();
             MessageBox.Show("Customer Added","Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
             DataTable dt = new DataTable();
@@ -73,19 +72,6 @@ namespace E_CommercePanel
             dataGridView1.DataSource = dt;
             cnc.connection().Close();
         }
-
-        private void picBack_Click(object sender, EventArgs e)
-        {
-            FrmAdminPanel fr = new FrmAdminPanel();
-            fr.Show();
-            this.Hide();
-        }
-
-        private void picClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int chosen = dataGridView1.SelectedCells[0].RowIndex;
@@ -94,6 +80,18 @@ namespace E_CommercePanel
             txtLastName.Text = dataGridView1.Rows[chosen].Cells[2].Value.ToString();
             txtEmail.Text = dataGridView1.Rows[chosen].Cells[3].Value.ToString();
             txtPhone.Text = dataGridView1.Rows[chosen].Cells[4].Value.ToString();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FrmAdminPanel fr = new FrmAdminPanel();
+            fr.Show();
+            this.Hide();
         }
     }
 }

@@ -33,15 +33,15 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDiscounts = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblBanner = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblBanner = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -109,6 +109,30 @@
             this.panel1.Size = new System.Drawing.Size(800, 109);
             this.panel1.TabIndex = 7;
             // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(703, 13);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(85, 80);
+            this.btnExit.TabIndex = 17;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel3.Location = new System.Drawing.Point(105, 92);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(590, 1);
+            this.panel3.TabIndex = 10;
+            // 
             // lblBanner
             // 
             this.lblBanner.AutoSize = true;
@@ -119,15 +143,6 @@
             this.lblBanner.Size = new System.Drawing.Size(200, 62);
             this.lblBanner.TabIndex = 9;
             this.lblBanner.Text = "Welcome! ";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel3.Location = new System.Drawing.Point(105, 92);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(590, 1);
-            this.panel3.TabIndex = 10;
             // 
             // pictureBox1
             // 
@@ -168,6 +183,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Products";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -182,7 +198,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(205, 50);
             this.button2.TabIndex = 7;
-            this.button2.Text = "Edit My Info";
+            this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -198,7 +214,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(205, 50);
             this.button3.TabIndex = 8;
-            this.button3.Text = "Order History";
+            this.button3.Text = "-";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // btnBack
@@ -215,21 +231,6 @@
             this.btnBack.TabIndex = 16;
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(703, 13);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(85, 80);
-            this.btnExit.TabIndex = 17;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FrmCustomerPanel
             // 
