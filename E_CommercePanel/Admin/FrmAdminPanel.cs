@@ -1,4 +1,5 @@
-﻿using System;
+﻿using E_CommercePanel.Admin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,25 @@ namespace E_CommercePanel
         private void btnEditCustomers_Click(object sender, EventArgs e)
         {
             FrmEditCustomers fr = new FrmEditCustomers();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void btnReviews_Click(object sender, EventArgs e)
+        {
+            FrmReviews fr = new FrmReviews();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FrmAdminLogin fr = new FrmAdminLogin();
             fr.Show();
             this.Hide();
         }

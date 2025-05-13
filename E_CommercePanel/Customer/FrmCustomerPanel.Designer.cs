@@ -40,7 +40,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnReviews = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,7 +55,7 @@
             this.btnOrderHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrderHistory.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
             this.btnOrderHistory.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnOrderHistory.Location = new System.Drawing.Point(319, 190);
+            this.btnOrderHistory.Location = new System.Drawing.Point(319, 188);
             this.btnOrderHistory.Name = "btnOrderHistory";
             this.btnOrderHistory.Size = new System.Drawing.Size(205, 50);
             this.btnOrderHistory.TabIndex = 5;
@@ -73,7 +72,7 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
             this.btnEdit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnEdit.Location = new System.Drawing.Point(319, 104);
+            this.btnEdit.Location = new System.Drawing.Point(319, 102);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(205, 50);
             this.btnEdit.TabIndex = 4;
@@ -90,7 +89,7 @@
             this.btnDiscounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDiscounts.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
             this.btnDiscounts.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnDiscounts.Location = new System.Drawing.Point(319, 18);
+            this.btnDiscounts.Location = new System.Drawing.Point(47, 247);
             this.btnDiscounts.Name = "btnDiscounts";
             this.btnDiscounts.Size = new System.Drawing.Size(205, 50);
             this.btnDiscounts.TabIndex = 6;
@@ -158,7 +157,6 @@
             // 
             this.panel2.Controls.Add(this.btnProducts);
             this.panel2.Controls.Add(this.btnReviews);
-            this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.btnDiscounts);
             this.panel2.Controls.Add(this.btnEdit);
             this.panel2.Controls.Add(this.btnOrderHistory);
@@ -177,7 +175,7 @@
             this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProducts.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
             this.btnProducts.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnProducts.Location = new System.Drawing.Point(47, 18);
+            this.btnProducts.Location = new System.Drawing.Point(47, 45);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Size = new System.Drawing.Size(205, 50);
             this.btnProducts.TabIndex = 9;
@@ -194,29 +192,13 @@
             this.btnReviews.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReviews.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
             this.btnReviews.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnReviews.Location = new System.Drawing.Point(47, 104);
+            this.btnReviews.Location = new System.Drawing.Point(47, 146);
             this.btnReviews.Name = "btnReviews";
             this.btnReviews.Size = new System.Drawing.Size(205, 50);
             this.btnReviews.TabIndex = 7;
             this.btnReviews.Text = "Reviews";
             this.btnReviews.UseVisualStyleBackColor = true;
             this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
-            // 
-            // button3
-            // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(47, 190);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(205, 50);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "-";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // btnBack
             // 
@@ -267,7 +249,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Button btnReviews;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnExit;
     }
