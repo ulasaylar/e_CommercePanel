@@ -29,7 +29,7 @@ namespace E_CommercePanel.Customer
         private void FrmProducts_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("SELECT ProductName, Description, Price, StockQuantity FROM Tbl_Products", cnc.connection());
+            SqlDataAdapter da = new SqlDataAdapter("SELECT ProductId,ProductName, Description, Price, StockQuantity FROM Tbl_Products", cnc.connection());
             da.Fill(dt);
             dataGridView1.DataSource = dt;
         }

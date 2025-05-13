@@ -70,6 +70,12 @@
     <Compile Include="Customer\FrmProducts.Designer.cs">
       <DependentUpon>FrmProducts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer\FrmReviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\FrmReviews.Designer.cs">
+      <DependentUpon>FrmReviews.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAdminLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer\FrmRegisterCustomer.resx">
       <DependentUpon>FrmRegisterCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\FrmReviews.resx">
+      <DependentUpon>FrmReviews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdminLogin.resx">
       <DependentUpon>FrmAdminLogin.cs</DependentUpon>

@@ -38,8 +38,8 @@
             this.lblBanner = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnProducts = new System.Windows.Forms.Button();
+            this.btnReviews = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -156,8 +156,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnProducts);
+            this.panel2.Controls.Add(this.btnReviews);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.btnDiscounts);
             this.panel2.Controls.Add(this.btnEdit);
@@ -168,38 +168,39 @@
             this.panel2.Size = new System.Drawing.Size(536, 341);
             this.panel2.TabIndex = 8;
             // 
-            // button1
+            // btnProducts
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(47, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(205, 50);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Products";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnProducts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProducts.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnProducts.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnProducts.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducts.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
+            this.btnProducts.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnProducts.Location = new System.Drawing.Point(47, 18);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(205, 50);
+            this.btnProducts.TabIndex = 9;
+            this.btnProducts.Text = "Products";
+            this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
-            // button2
+            // btnReviews
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(47, 104);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(205, 50);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnReviews.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReviews.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnReviews.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnReviews.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnReviews.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReviews.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
+            this.btnReviews.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnReviews.Location = new System.Drawing.Point(47, 104);
+            this.btnReviews.Name = "btnReviews";
+            this.btnReviews.Size = new System.Drawing.Size(205, 50);
+            this.btnReviews.TabIndex = 7;
+            this.btnReviews.Text = "Reviews";
+            this.btnReviews.UseVisualStyleBackColor = true;
+            this.btnReviews.Click += new System.EventHandler(this.btnReviews_Click);
             // 
             // button3
             // 
@@ -264,8 +265,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnProducts;
+        private System.Windows.Forms.Button btnReviews;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnExit;
